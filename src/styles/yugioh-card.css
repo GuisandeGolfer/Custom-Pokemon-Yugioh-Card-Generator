@@ -1,0 +1,126 @@
+.yugioh-card {
+  background: linear-gradient(145deg, #2a1f0e, #1a1408);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.yugioh-card-inner {
+  border: 2px solid #b8960c;
+  border-radius: 6px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #d4a843 0%, #c9952e 30%, #b8860b 100%);
+  padding: 8px;
+  gap: 6px;
+}
+
+/* Header: name + attribute */
+.yugioh-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yugioh-header .card-name {
+  font-size: 15px;
+  color: #1a1a1a;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  flex: 1;
+}
+
+.yugioh-attribute {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--card-primary);
+  border: 2px solid var(--card-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+/* Star row */
+.yugioh-stars {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2px;
+  padding: 0 2px;
+}
+
+.yugioh-star {
+  width: 14px;
+  height: 14px;
+  color: #DAA520;
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* Art frame */
+.yugioh-art {
+  height: 180px;
+  border: 3px solid #b8960c;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Description box */
+.yugioh-description-box {
+  background: #f5e6c8;
+  border: 1px solid #b8960c;
+  border-radius: 4px;
+  padding: 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.yugioh-card-type {
+  font-size: 10px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #d4a843;
+  padding-bottom: 4px;
+}
+
+.yugioh-description-box .card-description {
+  color: #1a1a1a;
+  font-size: 10.5px;
+  flex: 1;
+}
+
+.yugioh-event-details {
+  font-size: 9px;
+  color: #666;
+  margin-top: 6px;
+  padding-top: 4px;
+  border-top: 1px dashed #ccc;
+  font-style: italic;
+}
+
+/* ATK / DEF footer */
+.yugioh-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  padding: 2px 4px;
+}
+
+.yugioh-stat {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.yugioh-stat-label {
+  font-size: 10px;
+  font-weight: 400;
+}

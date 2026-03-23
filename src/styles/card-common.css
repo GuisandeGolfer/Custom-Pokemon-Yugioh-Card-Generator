@@ -1,0 +1,95 @@
+.card-container {
+  width: 350px;
+  height: 490px;
+  border-radius: 12px;
+  position: relative;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.card-art {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-art-window {
+  overflow: hidden;
+  position: relative;
+  background: #1a1a2e;
+}
+
+.card-art-window img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-name {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-description {
+  font-size: 11px;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+.card-placeholder {
+  width: 350px;
+  height: 490px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #a0a0b0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.card-placeholder-icon {
+  font-size: 48px;
+  opacity: 0.5;
+}
+
+.card-placeholder-text {
+  font-size: 14px;
+  text-align: center;
+  padding: 0 32px;
+  line-height: 1.5;
+}
+
+/* Element type colors */
+.element-fire { --card-primary: #FF6B35; --card-secondary: #FF2D00; --card-bg: #FFF0E8; }
+.element-water { --card-primary: #0077B6; --card-secondary: #00B4D8; --card-bg: #E8F4FD; }
+.element-earth { --card-primary: #8B6914; --card-secondary: #DAA520; --card-bg: #FDF5E6; }
+.element-wind { --card-primary: #2ECC71; --card-secondary: #27AE60; --card-bg: #E8FDF0; }
+.element-light { --card-primary: #F1C40F; --card-secondary: #F39C12; --card-bg: #FFFDE8; }
+.element-dark { --card-primary: #6C5CE7; --card-secondary: #474787; --card-bg: #F0ECF8; }
+
+/* Card fade-in animation */
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.card-animated {
+  animation: cardFadeIn 0.5s ease-out;
+}
